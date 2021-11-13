@@ -1,0 +1,7 @@
+/* jetbrains-mono-regular - latin_cyrillic */
+@font-face {
+	font-family: "JetBrains Mono";
+	font-style: normal;
+	font-weight: 400;
+	src: local("JetBrains Mono"), url("../font/jetbrains-mono-v6-latin_cyrillic-regular.woff2") format("woff2"), url("../font/jetbrains-mono-v6-latin_cyrillic-regular.woff") format("woff");
+}
