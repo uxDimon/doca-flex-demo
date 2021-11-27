@@ -14,8 +14,6 @@ export default class CodeSelect {
 			this._setWidth();
 			this.callbackChange(event.currentTarget.value);
 		});
-
-		console.log(this.optionsWidth);
 	}
 
 	_createdOptionsWidth() {
