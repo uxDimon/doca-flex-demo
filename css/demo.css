@@ -29,8 +29,8 @@
 
 .item_end {
 	min-width: auto;
-	background: #43a047;
-	border-color: #265a28;
+	background: hsl(123, 41%, 45%);
+	border-color: hsl(122, 41%, 25%);
 }
 
 .item__controls {

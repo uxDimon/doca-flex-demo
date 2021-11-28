@@ -8,6 +8,7 @@ module.exports = defineConfig({
 				main: resolve(__dirname, "index.html"),
 				flexDirection: resolve(__dirname, "flex_direction/index.html"),
 				flexWrap: resolve(__dirname, "flex_wrap/index.html"),
+				flexFlow: resolve(__dirname, "flex_flow/index.html"),
 			},
 		},
 	},
