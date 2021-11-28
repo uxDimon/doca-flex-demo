@@ -1,7 +1,7 @@
-import "../main.css";
+import "../../main.css";
 
-import CodeSelect from "../js/codeSelect.js";
-import Demo from "../js/demo.js";
+import CodeSelect from "../../js/codeSelect.js";
+import Demo from "../../js/demo.js";
 
 const demoEl = document.querySelector("[data-demo-wrap]"),
 	selectorFlexDirection = document.querySelector('[data-select="flex-direction"]'),
