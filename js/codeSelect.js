@@ -17,25 +17,25 @@ export default class CodeSelect {
 	}
 
 	_createdOptionsWidth() {
-		const REMOVE_CLASS = "codeSelect_remove";
+		window.addEventListener("load", () => {
+			const REMOVE_CLASS = "codeSelect_remove";
 
-		for (const options of this.selectEl.options) {
-			let optionsEl = document.createElement("span");
-			optionsEl.classList.add(REMOVE_CLASS);
-			optionsEl.innerHTML = options.text;
-			this.selectEl.insertAdjacentElement("afterend", optionsEl);
-		}
+			for (const options of this.selectEl.options) {
+				let optionsEl = document.createElement("span");
+				optionsEl.classList.add(REMOVE_CLASS);
+				optionsEl.innerHTML = options.text;
+				this.selectEl.insertAdjacentElement("afterend", optionsEl);
+			}
 
-		const removeElList = document.querySelectorAll("." + REMOVE_CLASS);
+			const removeElList = document.querySelectorAll("." + REMOVE_CLASS);
 
-		window.onload = () => {
 			for (const el of removeElList) {
 				this.optionsWidth[el.innerText] = el.offsetWidth + 24;
 				el.remove();
 			}
 
 			this._setWidth();
-		};
+		});
 	}
 
 	_setWidth() {
