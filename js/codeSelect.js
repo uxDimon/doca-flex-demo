@@ -18,16 +18,14 @@ export default class CodeSelect {
 
 	_createdOptionsWidth() {
 		window.addEventListener("load", () => {
-			const REMOVE_CLASS = "codeSelect_remove";
+			const removeElList = [];
 
 			for (const options of this.selectEl.options) {
 				let optionsEl = document.createElement("span");
-				optionsEl.classList.add(REMOVE_CLASS);
 				optionsEl.innerHTML = options.text;
+				removeElList.push(optionsEl);
 				this.selectEl.insertAdjacentElement("afterend", optionsEl);
 			}
-
-			const removeElList = document.querySelectorAll("." + REMOVE_CLASS);
 
 			for (const el of removeElList) {
 				this.optionsWidth[el.innerText] = el.offsetWidth + 24;
