@@ -10,7 +10,7 @@ body {
 }
 
 body {
-	--color-background: hsl(0, 0%, 100%);
+	--color-background: hsl(0, 0%, 95%);
 	--color-code-selector: hsl(119, 34%, 47%);
 	--color-code-properties: hsl(5, 74%, 59%);
 	--color-code-value: hsl(35, 99%, 36%);
