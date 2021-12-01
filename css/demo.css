@@ -65,13 +65,21 @@
 	content: "";
 	display: block;
 	height: 1px;
-	width: calc(100% + 200px);
+	width: calc(100% + 300px);
 	position: absolute;
 	top: 1em;
 	left: 50%;
 	transform: translateX(-50%);
 	background: hsl(0, 100%, 50%);
 	z-index: 1;
+}
+
+.demo._baseline .item:first-child .item__name::before {
+	width: calc(100% + 200px);
+}
+
+.demo._baseline .item:last-child .item__name::before {
+	width: calc(100% + 200px);
 }
 
 .item__controls {
@@ -123,6 +131,6 @@
 	background-image: url(../img/icon=irow-more.svg);
 }
 
-.demo._baseline .item._size .item__btn_size {
+.item._size .item__btn_size {
 	background-image: url(../img/icon=irow-less.svg);
 }
