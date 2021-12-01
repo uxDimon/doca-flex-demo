@@ -1,4 +1,4 @@
-# Doca flex demo
+# Doka flex demo
 
 Устанавливаем
 
