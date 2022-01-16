@@ -3,6 +3,9 @@ const { defineConfig } = require("vite");
 
 module.exports = defineConfig({
 	// base: "./",
+	server: {
+		host: "0.0.0.0",
+	},
 	build: {
 		outDir: "docs",
 		rollupOptions: {
@@ -13,6 +16,7 @@ module.exports = defineConfig({
 				flexFlow: resolve(__dirname, "pages/flex_flow/index.html"),
 				justifyContent: resolve(__dirname, "pages/justify_content/index.html"),
 				alignItems: resolve(__dirname, "pages/align_items/index.html"),
+				order: resolve(__dirname, "pages/order/index.html"),
 			},
 		},
 	},

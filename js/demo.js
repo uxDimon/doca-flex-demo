@@ -20,11 +20,21 @@ export default class Demo {
 	}
 
 	_itemConstructor(index) {
-		let example = this.itemEl.cloneNode(true);
+		let example = this.itemEl.cloneNode(true),
+			order = 1;
 		const name = example.querySelector("[data-demo-item-name]"),
+			orderTextList = example.querySelectorAll("[data-demo-item-order]"),
+			btnOrderMinus = example.querySelector('[data-demo-item-btn="minus"]'),
+			btnOrderPlus = example.querySelector('[data-demo-item-btn="plus"]'),
 			btnRemove = example.querySelector('[data-demo-item-btn="remove"]'),
 			btnSize = example.querySelector('[data-demo-item-btn="size"]'),
-			btnAdd = example.querySelector('[data-demo-item-btn="add"]');
+			btnAdd = example.querySelector('[data-demo-item-btn="add"]'),
+			changeOrder = (number) => {
+				for (const orderText of orderTextList) {
+					orderText.innerText = number;
+				}
+				example.style.order = number;
+			};
 
 		name.innerText = name.innerText + " " + (index + 1);
 
@@ -48,6 +58,19 @@ export default class Demo {
 		btnAdd.addEventListener("click", () => {
 			this._addItem();
 		});
+
+		if (orderTextList && btnOrderMinus && btnOrderPlus) {
+			example.classList.add("item_" + (index + 1));
+			changeOrder(order);
+
+			btnOrderMinus.addEventListener("click", () => {
+				changeOrder(--order);
+			});
+
+			btnOrderPlus.addEventListener("click", () => {
+				changeOrder(++order);
+			});
+		}
 
 		this.endEl.insertAdjacentElement("beforebegin", example);
 		this.itemListEl.push(example);
