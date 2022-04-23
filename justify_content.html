@@ -3,11 +3,11 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Демо flex-wrap</title>
+		<title>Демо justify-content</title>
 	</head>
 	<body class="_dark">
 		<main class="main-wrap">
-			<h1 class="main-wrap__heading">flex-wrap</h1>
+			<h1 class="main-wrap__heading">justify-content</h1>
 			<code class="code">
 				<pre><span class="code__selector">.container</span> {</pre>
 				<pre>	<span class="code__properties">width</span>: <span class="code__value">100%</span>;</pre>
@@ -26,6 +26,19 @@
 					<option value="wrap">wrap</option>
 					<option value="wrap-reverse">wrap-reverse</option>
 				</select>;</pre>
+
+				<pre>	<span class="code__properties">justify-content</span>: <select data-select="justify-content" class="code__select" name="justify-content" >
+					<option selected value="flex-start">flex-start</option>
+					<option value="flex-end">flex-end</option>
+					<option value="start">start</option>
+					<option value="end">end</option>
+					<option value="left">left</option>
+					<option value="right">right</option>
+					<option value="center">center</option>
+					<option value="space-between">space-between</option>
+					<option value="space-around">space-around</option>
+					<option value="space-evenly">space-evenly</option>
+				</select>;</pre>
 				<pre>}</pre>
 			</code>
 
@@ -43,6 +56,6 @@
 			</div>
 		</main>
 
-		<script type="module" src="./flex_wrap.js"></script>
+		<script type="module" src="./js/justify_content.js"></script>
 	</body>
 </html>
