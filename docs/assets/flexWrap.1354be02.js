@@ -1,1 +1,0 @@
-import"./main.1e029260.js";import{C as l,D as a}from"./demo.49698058.js";const e=document.querySelector("[data-demo-wrap]"),o=document.querySelector('[data-select="flex-direction"]'),r=document.querySelector('[data-select="flex-wrap"]');e.style.flexDirection=o.value;e.style.flexWrap=r.value;new l(o,t=>{e.style.flexDirection=t});new l(r,t=>{e.style.flexWrap=t});new a;

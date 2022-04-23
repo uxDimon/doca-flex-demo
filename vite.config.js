@@ -7,7 +7,7 @@ module.exports = defineConfig({
 		host: "0.0.0.0",
 	},
 	build: {
-		outDir: "docs",
+		// outDir: "docs",
 		rollupOptions: {
 			input: {
 				main: resolve(__dirname, "index.html"),
