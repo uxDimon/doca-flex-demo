@@ -7,10 +7,10 @@ module.exports = defineConfig({
 		host: "0.0.0.0",
 	},
 	build: {
-		outDir: "./dist",
+		outDir: "../content/css/flexbox-guide/demos/",
 		rollupOptions: {
 			input: {
-				main: resolve(__dirname, "index.html"),
+				// main: resolve(__dirname, "index.html"),
 				flexDirection: resolve(__dirname, "flex_direction.html"),
 				flexWrap: resolve(__dirname, "flex_wrap.html"),
 				flexFlow: resolve(__dirname, "flex_flow.html"),

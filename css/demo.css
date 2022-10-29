@@ -18,8 +18,8 @@
 	font-size: 18px;
 	text-align: center;
 	color: hsl(0, 0%, 100%);
-	background: hsl(231, 44%, 56%);
-	border: 1px solid hsl(231, 44%, 36%);
+	background: hsl(212, 98%, 55%);
+	border: 1px solid var(--color-background);
 }
 
 .demo._baseline .item._size:nth-child(5n + 1) {
@@ -50,40 +50,40 @@
 .item.item_7,
 .item.item_12,
 .item.item_17 {
-	background: hsl(231, 44%, 52%);
+	background: hsl(174, 100%, 29%);
 }
 
 .item.item_3,
 .item.item_8,
 .item.item_13,
 .item.item_18 {
-	background: hsl(231, 44%, 48%);
+	background: hsl(259, 51%, 43%);
 }
 
 .item.item_4,
 .item.item_9,
 .item.item_14,
 .item.item_19 {
-	background: hsl(231, 44%, 44%);
+	background: hsl(339, 81%, 42%);
 }
 
 .item.item_5,
 .item.item_10,
 .item.item_15,
 .item.item_20 {
-	background: hsl(231, 44%, 40%);
+	background: hsl(36, 92%, 43%);
 }
 
 .item_start {
 	min-width: auto;
 	background: hsl(14, 91%, 54%);
-	border-color: hsl(15, 91%, 34%);
+	/* border-color: hsl(15, 91%, 34%); */
 }
 
 .item_end {
 	min-width: auto;
 	background: hsl(123, 41%, 45%);
-	border-color: hsl(122, 41%, 25%);
+	/* border-color: hsl(122, 41%, 25%); */
 }
 
 .item__name {
@@ -129,7 +129,7 @@
 	min-height: 100%;
 	padding: 6px 0;
 	background: inherit;
-	border: 1px solid hsl(231, 44%, 36%);
+	/* border: 1px solid hsl(212, 98%, 45%); */
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	align-content: center;
@@ -147,7 +147,7 @@
 	height: 29px;
 	padding: 0;
 	margin: 0;
-	background-color: hsl(231, 44%, 50%);
+	background-color: hsl(212, 98%, 44%);
 	border: none;
 	border-radius: 29px;
 	cursor: pointer;
@@ -157,23 +157,23 @@
 }
 
 .item__btn:hover {
-	background-color: hsl(231, 44%, 36%);
+	background-color: hsl(212, 98%, 38%);
 }
 
 .item__btn_add {
-	background-image: url(../img/icon=plus.svg);
+	background-image: url(../img/icon_plus.svg);
 }
 
 .item__btn_remove {
-	background-image: url(../img/icon=minus.svg);
+	background-image: url(../img/icon_minus.svg);
 }
 
 .item__btn_size {
-	background-image: url(../img/icon=irow-more.svg);
+	background-image: url(../img/icon_irow-more.svg);
 }
 
 .item._size .item__btn_size {
-	background-image: url(../img/icon=irow-less.svg);
+	background-image: url(../img/icon_irow-less.svg);
 }
 
 .item__controls-order {
