@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="ru">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Демо align-items</title>
-	</head>
-	<body class="_dark">
-		<main class="main-wrap">
-			<code class="code">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Демо align-items</title>
+	<script type="module" crossorigin src="./order.js"></script>
+	<link rel="stylesheet" href="../main.css">
+</head>
+
+<body class="_dark">
+	<main class="main-wrap">
+		<code class="code">
 				<pre><span class="code__selector">.container</span> {</pre>
 				<pre>	<span class="code__properties">width</span>: <span class="code__value">100%</span>;</pre>
 				<pre>	<span class="code__properties">height</span>: <span class="code__value">320px</span>;</pre>
@@ -49,32 +53,38 @@
 				<pre>}</pre>
 			</code>
 
-			<div data-demo-wrap class="demo">
-				<div class="item item_start"><span class="item__name">Start</span></div>
-				<div data-demo-item class="item">
-					<span data-demo-item-name class="item__name">Item</span>
-					<div class="item__controls">
-						<button
-							data-demo-item-btn="remove"
-							class="item__btn item__btn_remove"
-							aria-label="Удалить элемент"
-						></button>
-						<button
-							data-demo-item-btn="size"
-							class="item__btn item__btn_size"
-							aria-label="Увеличить/уменьшить элемент"
-						></button>
-						<button
-							data-demo-item-btn="add"
-							class="item__btn item__btn_add"
-							aria-label="Добавить элемент"
-						></button>
-					</div>
-				</div>
-				<div data-demo-end class="item item_end"><span class="item__name">End</span></div>
+		<div data-demo-wrap class="demo">
+			<div class="item item_start" style="order: 0">
+				<span class="item__name">Start</span>
+				<span class="item__order">order: 0</span>
 			</div>
-		</main>
+			<div data-demo-item class="item">
+				<span data-demo-item-name class="item__name">Item</span>
+				<span class="item__order">order:
+					<span data-demo-item-order>1</span>
+				</span>
+				<div class="item__controls">
+					<button data-demo-item-btn="remove" class="item__btn item__btn_remove"
+						aria-label="Удалить элемент"></button>
+					<button data-demo-item-btn="size" class="item__btn item__btn_size"
+						aria-label="Увеличить/уменьшить элемент"></button>
+					<button data-demo-item-btn="add" class="item__btn item__btn_add"
+						aria-label="Добавить элемент"></button>
 
-		<script type="module" src="./js/align_items.js"></script>
-	</body>
+					<span class="item__controls-order">order</span>
+					<button data-demo-item-btn="minus" class="item__btn item__btn_remove"
+						aria-label="Удалить элемент"></button>
+					<span data-demo-item-order>1</span>
+					<button data-demo-item-btn="plus" class="item__btn item__btn_add"
+						aria-label="Добавить элемент"></button>
+				</div>
+			</div>
+			<div data-demo-end class="item item_end" style="order: 2">
+				<span class="item__name">End</span>
+				<span class="item__order">order: 2</span>
+			</div>
+		</div>
+	</main>
+</body>
+
 </html>
