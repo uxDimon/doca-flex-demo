@@ -14,7 +14,7 @@ body {
 	--color-code-selector: hsl(119, 34%, 47%);
 	--color-code-properties: hsl(5, 74%, 59%);
 	--color-code-value: hsl(220, 7%, 17%);
-	--color-code: #383a42;
+	--color-code: hsl(228, 8%, 24%);
 
 	margin: 0;
 	padding: 0;
@@ -98,10 +98,10 @@ body._dark {
 	cursor: pointer;
 
 	background-color: transparent;
-	background-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 4L7 10L13 4' stroke-width='2' stroke='%23333333'/%3E%3C/svg%3E%0A");
-	background-size: 14px;
+	background-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 4L7 10L13 4' stroke-width='2' stroke='%23e45649'/%3E%3C/svg%3E%0A");
+	background-size: 16px;
 	background-repeat: no-repeat;
-	background-position: calc(100% - 4px) center;
+	background-position: calc(100% - 2px) center;
 }
 
 .code__select:hover {
@@ -113,7 +113,7 @@ body._dark {
 }
 
 ._dark .code__select {
-	background-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 4L7 10L13 4' stroke-width='2' stroke='%23FFFFFF'/%3E%3C/svg%3E%0A");
+	background-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 4L7 10L13 4' stroke-width='2' stroke='%23e06b75'/%3E%3C/svg%3E%0A");
 }
 
 .code__select option {
@@ -141,7 +141,7 @@ body._dark {
 	font-size: 18px;
 	text-align: center;
 	color: hsl(0, 0%, 100%);
-	background: hsl(212, 98%, 55%);
+	background: hsl(209, 100%, 59%);
 	border: 1px solid var(--color-background);
 }
 
@@ -267,33 +267,33 @@ body._dark {
 	height: 29px;
 	padding: 0;
 	margin: 0;
-	background-color: hsl(212, 98%, 44%);
+	background-color: hsla(0, 0%, 0%, 0.2);
 	border: none;
 	border-radius: 29px;
 	cursor: pointer;
 	background-position: center;
-	background-size: 21px;
+	background-size: 20px;
 	background-repeat: no-repeat;
 }
 
 .item__btn:hover {
-	background-color: hsl(212, 98%, 38%);
+	background-color: hsla(0, 0%, 0%, 0.4);
 }
 
 .item__btn_add {
-	background-image: url(../img/icon_plus.svg);
+	background-image: url(./img/icon_plus.svg);
 }
 
 .item__btn_remove {
-	background-image: url(../img/icon_minus.svg);
+	background-image: url(./img/icon_minus.svg);
 }
 
 .item__btn_size {
-	background-image: url(../img/icon_irow-more.svg);
+	background-image: url(./img/icon_irow-more.svg);
 }
 
 .item._size .item__btn_size {
-	background-image: url(../img/icon_irow-less.svg);
+	background-image: url(./img/icon_irow-less.svg);
 }
 
 .item__controls-order {

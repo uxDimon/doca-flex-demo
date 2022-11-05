@@ -49,7 +49,7 @@ export default class Demo {
 				example.style.height = "";
 				example.classList.remove(this.SIZE_CLASS);
 			} else {
-				const size = 50 * (Math.random() + 1.5);
+				const size = 50 * (Math.random() + 2.5);
 				example.style.height = size + "px";
 				example.classList.add(this.SIZE_CLASS);
 			}
