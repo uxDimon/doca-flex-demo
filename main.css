@@ -10,7 +10,7 @@ body {
 }
 
 body {
-	--color-background: hsl(0, 0%, 100%);
+	--color-background: hsl(225, 8%, 90%);
 	--color-code-selector: hsl(119, 34%, 47%);
 	--color-code-properties: hsl(5, 74%, 59%);
 	--color-code-value: hsl(35, 99%, 36%);
@@ -22,7 +22,7 @@ body {
 	font-family: "Roboto Mono", monospace;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 20px;
+	font-size: 18px;
 	line-height: 1.3;
 	color: var(--color-code);
 }
